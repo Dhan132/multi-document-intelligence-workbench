@@ -1,0 +1,14 @@
+Project Status: Active
+Owner: Program Office
+Risk Level: Moderate
+Last Review: 2026-09-15
+Budget: 420000
+Priority: High
+
+Summary:
+The project remains active and on schedule. The team completed the latest milestone review and confirmed that the primary risk is vendor delivery timing.
+
+Action Items:
+- Confirm supplier dates
+- Review testing plan
+- Validate go-live checklist

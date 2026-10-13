@@ -1,0 +1,32 @@
+# Node and frontend build outputs
+node_modules/
+web/node_modules/
+api/node_modules/
+web/dist/
+api/dist/
+
+# Environment files
+.env
+api/.env
+web/.env
+
+# SQLite and temp data
+api/data/
+api/tmp/
+*.db
+*.db-shm
+*.db-wal
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Logs
+npm-debug.log*
+logs/
+*.log
+
+# Uploaded artifacts
+uploads/
+sample-uploads/
