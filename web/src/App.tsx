@@ -44,7 +44,7 @@ const renderAnalysisText = (response: AnalysisResponse) => {
     '',
     'Interpretation and Limitations:',
     ...analysis.interpretations.map((item, index) => `${index + 1}. ${item.statement}`),
-    ...analysis.limitations.map((item, index) => `- ${item}`),
+    ...analysis.limitations.map((item) => `- ${item}`),
   ];
 
   return sections.join('\n');
