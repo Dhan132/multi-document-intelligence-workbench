@@ -1,5 +1,5 @@
 import path from 'path';
-import pdfParse from 'pdf-parse';
+import { PDFParse } from 'pdf-parse';
 
 export type DocumentExtractionStatus = 'processed' | 'empty' | 'error';
 
@@ -30,7 +30,7 @@ export const extractTextFromFile = async (
   try {
     switch (extension) {
       case '.pdf': {
-        const pdfData = await pdfParse(file.buffer);
+        const pdfData = await new PDFParse({ data: file.buffer }).getText();
         const text = normalizeText(pdfData.text ?? '');
 
         if (!text) {

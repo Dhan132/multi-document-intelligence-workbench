@@ -1,3 +1,4 @@
+import type { Request, Response } from 'express';
 import { z } from 'zod';
 
 import { getDocumentById } from '../db/database';
@@ -8,7 +9,7 @@ const analysisRequestSchema = z.object({
   prompt: z.string().trim().min(10).max(2000),
 });
 
-export const analyzeDocuments = async (req: Express.Request, res: Express.Response) => {
+export const analyzeDocuments = async (req: Request, res: Response) => {
   const parsed = analysisRequestSchema.safeParse(req.body);
 
   if (!parsed.success) {
